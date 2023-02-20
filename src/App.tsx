@@ -29,7 +29,7 @@ const App: FC = () => {
 
   // Function that adds a new Todo item when Add button is clicked
   const addTask = (): void => {
-    if (task.length > 0) {
+    if (task.length > 0 && deadline >= 0) {
       const newTask = {
         taskName: task,
         deadLine: deadline,
